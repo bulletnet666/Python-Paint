@@ -1,6 +1,6 @@
 thx for opening this file
-so to know how to use Python Paint
-here info about every thing:
+so this paint is beta
+btw here info about every thing:
 Info:
     Cursor:
         Drag to make it draw.
