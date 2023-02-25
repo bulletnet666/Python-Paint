@@ -48,4 +48,4 @@ Bonus: If you have [**VSCode**](https://code.visualstudio.com/download) you can 
 
 Q:Can I resize the window?
 
-A: NO! Because it's gonna be look really like some sh-... yea
+A: NO! Because it's gonna be look really like... yea
