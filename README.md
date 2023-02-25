@@ -40,7 +40,7 @@ More info about Sounds off and on button:
 ## Q&A:
 Q: How do I Start this program?
 
-A: Download [**Python**](https://www.python.org/downloads/).
+A: Download [**Python**](https://www.python.org/downloads/) or [**PyCharm**](https://www.jetbrains.com//pycharm/download/#section=windows).
 
 Bonus: If you have [**VSCode**](https://code.visualstudio.com/download) you can download [**Python**](https://marketplace.visualstudio.com/items?itemName=ms-python.python) by Marketplace
 
