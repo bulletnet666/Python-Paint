@@ -44,7 +44,7 @@ A: Download [**Python**](https://www.python.org/downloads/).
 
 Bonus: If you have [**VSCode**](https://code.visualstudio.com/download) you can download [**Python**](https://marketplace.visualstudio.com/items?itemName=ms-python.python) by Marketplace
 
---------------------------------------------------------------------------------------------------
+---
 
 Q:Can I resize the window?
 
