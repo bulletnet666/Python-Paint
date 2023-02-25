@@ -1,5 +1,10 @@
 from turtle import *
 import winsound
+import tkinter
+
+title("Loading.. don't click anything")
+img = tkinter.Image("photo", file="icon.png")
+Turtle._screen._root.iconphoto(True, img)
 
 loading = Turtle()
 loading.speed(0)
@@ -16,13 +21,29 @@ loading.write("Loading..", font=('Courier', 20), align="center")
 loading.goto(0, -120)
 loading.write("don't click anything", font=('Courier', 20), align="center")
 
+sstatus = Turtle()
+sstatus.hideturtle()
+sstatus.penup()
+sstatus.speed(0)
+sstatus.goto(440, -350)
+sstatus.write("Sounds", font=('Courier', 10), align="center")
+sstatus.goto(440, -370)
+sstatus.showturtle()
+sstatus.shape("circle")
+sstatus.color("lightgreen")
+
+
+fcct = Turtle()
+fcct.hideturtle()
+fcct.penup()
+fcct.goto(-470, -300)
+fcct.color("black")
+fcct.write('button clicked: 0', font=('Courier', 10), align="left")
+
 status = Turtle()
 status.speed(0)
 status.penup()
 status.hideturtle()
-status.goto(0-1, -260-1)
-status.color("black")
-status.write("Pen status:On", font=('Courier', 10), align="center")
 status.goto(0, -260)
 status.color("dodgerblue")
 status.write("Pen status:On", font=('Courier', 10), align="center")
@@ -198,62 +219,147 @@ def is_collided_with(a, b):
 scr = red_t.getscreen()
 
 
+fccv: int = 0
+
+sounds = 1
+
+
 def setRed(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     scr.bgcolor("red")
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
 
 
 def setBlue(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     scr.bgcolor("blue")
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
 
 
 def setGreen(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     scr.bgcolor("lime")
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
 
 
 def setYellow(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     scr.bgcolor("yellow")
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
 
 
 def setWhite(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     scr.bgcolor("white")
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
 
 
 def cRed(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     cursor.color("brown")
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
 
 
 def cBlue(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     cursor.color("mediumblue")
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
 
 
 def cGreen(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     cursor.color("green")
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
 
 
 def cYellow(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     cursor.color("olive")
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
 
 
 def cWhite(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     cursor.color("grey")
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
 
 
 def snap(x, y):
-    winsound.PlaySound("snap.wav", winsound.SND_ASYNC)
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("snap.wav", winsound.SND_ASYNC)
 
 
 def unsnap(x, y):
-    winsound.PlaySound("unsnap.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("unsnap.wav", winsound.SND_ASYNC)
 
 
 def move(x, y):
@@ -261,77 +367,141 @@ def move(x, y):
 
 
 def clean(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     cursor.penup()
     cursor.clear()
     cursor.goto(0, 0)
     cursor.pendown()
     if penstatus == 0:
         cursor.penup()
-    winsound.PlaySound("clear.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("clear.wav", winsound.SND_ASYNC)
 
 
 SC = 1
+SI = 0.5
 
 
 def SCsmall(x, y):
+    global SI
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     global SC
     if SC == 1:
         SCs.hideturtle()
     else:
-        SC = SC-1
+        SC = SC - 1
+        SI = SI - 0.05
         SCb.showturtle()
         sz.clear()
         sz.color("dodgerblue")
         sz.write(str(SC), font=('Courier', 15), align="center")
         cursor.pensize(SC)
-        winsound.PlaySound("SC.wav", winsound.SND_ASYNC)
+        if sounds == 0:
+            winsound.PlaySound(None, 0)
+        else:
+            winsound.PlaySound("SC.wav", winsound.SND_ASYNC)
+        cursor.shapesize(SI)
         if SC == 1:
             SCs.hideturtle()
 
 
 def SCbig(x, y):
+    global fccv
+    global SI
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     global SC
     if SC == 25:
         SCb.hideturtle()
     else:
-        SC = SC+1
+        SC = SC + 1
+        SI = SI + 0.05
         SCs.showturtle()
         sz.clear()
         sz.color("dodgerblue")
         sz.write(str(SC), font=('Courier', 15), align="center")
         cursor.pensize(SC)
-        winsound.PlaySound("SC.wav", winsound.SND_ASYNC)
+        if sounds == 0:
+            winsound.PlaySound(None, 0)
+        else:
+            winsound.PlaySound("SC.wav", winsound.SND_ASYNC)
+        cursor.shapesize(SI)
         if SC == 25:
             SCb.hideturtle()
 
-penstatus = 1
+penstatus = 0
+
 
 def penup(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     global penstatus
     cursor.penup()
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
     status.clear()
     penstatus = 0
-    status.goto(0 - 1, -260 - 1)
-    status.color("black")
-    status.write("Pen status:Off", font=('Courier', 10), align="center")
-    status.goto(0, -260)
     status.color("dodgerblue")
     status.write("Pen status:Off", font=('Courier', 10), align="center")
 
 
 def pendown(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
     global penstatus
     cursor.pendown()
-    winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
+    if sounds == 0:
+        winsound.PlaySound(None, 0)
+    else:
+        winsound.PlaySound("untitled.wav", winsound.SND_ASYNC)
     status.clear()
     penstatus = 1
-    status.goto(0 - 1, -260 - 1)
-    status.color("black")
-    status.write("Pen status:On", font=('Courier', 10), align="center")
-    status.goto(0, -260)
     status.color("dodgerblue")
     status.write("Pen status:On", font=('Courier', 10), align="center")
+
+
+def soundoff(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
+    global sounds
+    winsound.PlaySound("off.wav", winsound.SND_ASYNC)
+    sounds = 0
+    sstatus.color("salmon")
+
+
+def soundon(x, y):
+    global fccv
+    fccv = fccv + 1
+    fcct.clear()
+    fcct.write('button clicked: ' + str(fccv), font=('Courier', 10), align="left")
+    global sounds
+    winsound.PlaySound("on.wav", winsound.SND_ASYNC)
+    sounds = 1
+    sstatus.color("lightgreen")
+
+
+def stest(x, y):
+    if sounds == 1:
+        soundoff(x, y)
+    elif sounds == 0:
+        soundon(x , y)
 
 
 cursor = red_t.clone()
@@ -341,6 +511,7 @@ cursor.color("grey")
 cursor.penup()
 cursor.goto(0, 0)
 cursor.pendown()
+cursor.shapesize(SI)
 
 cursor.ondrag(move)
 cursor.onclick(snap)
@@ -359,6 +530,8 @@ blue_c.onclick(cBlue)
 green_c.onclick(cGreen)
 yellow_c.onclick(cYellow)
 white_c.onclick(cWhite)
+
+sstatus.onclick(stest)
 
 clear.onclick(clean)
 
@@ -384,12 +557,18 @@ SCi = Turtle()
 SCi.penup()
 SCi.speed(0)
 SCi.hideturtle()
+SCi.goto(0-1, 320-1)
+SCi.color("black")
+SCi.write("Brush size", font=('Courier', 10), align="center")
 SCi.goto(0, 320)
 SCi.color("dodgerblue")
 SCi.write("Brush size", font=('Courier', 10), align="center")
 
+scr.listen()
 cursor.clear()
 loading.clear()
 winsound.PlaySound("LD.wav", winsound.SND_ASYNC)
+title("Python Paint")
+scr.screensize()
 
 done()

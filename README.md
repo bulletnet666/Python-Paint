@@ -1,5 +1,5 @@
-thx for opening this file.
-so this paint is beta.
+thx for opening this file
+so this paint is beta
 btw here info about every thing:
 Info:
     Cursor:
@@ -11,6 +11,9 @@ Info:
     Brush size:
         Press on arrows to change Brush size.
     Pen off and on:
-        Press on arrows to make pen off or on.
-Download PyCharm or VScode to make it work.
-VScode: download plugin Python
+        Press on arrows to make pen off or on
+    Sounds off and on:
+        Press on circle to make sounds off or on
+            more info:
+                if color of the button green then the sounds are on
+                if color of the button red then the sounds are off
